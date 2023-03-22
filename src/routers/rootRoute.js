@@ -12,5 +12,5 @@ rootRoute.use("/order", orderRoute);
 
 
 module.exports = {
-    rootRoute
+    rootRoute,
 }
