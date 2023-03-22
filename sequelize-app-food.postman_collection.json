@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "a0bd14f0-48c8-4150-bc8a-1660a8f4559d",
+		"name": "sequelize-app-food",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22932802"
+	},
+	"item": [
+		{
+			"name": "Bài  tập 1",
+			"item": [
+				{
+					"name": "like-res",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 1,\r\n    \"res_id\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/user-like/like-res",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"user-like",
+								"like-res"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list-like",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/user-like/list-like",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"user-like",
+								"list-like"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "res_id",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "unlike-res",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 2,\r\n    \"res_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/user-like/unlike-res",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"user-like",
+								"unlike-res"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user-like-res",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/user-like/user-like-res/2",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"user-like",
+								"user-like-res",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list-res-like",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/user-like/list-res-like/11",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"user-like",
+								"list-res-like",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bài tập 2",
+			"item": [
+				{
+					"name": "evaluate-res",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 1,\r\n    \"amount\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/user-res/evaluate-res/6",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"user-res",
+								"evaluate-res",
+								"6"
+							],
+							"query": [
+								{
+									"key": "res_id",
+									"value": "3",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list-res",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 1,\r\n    \"amount\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/user-res/list-res",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"user-res",
+								"list-res"
+							],
+							"query": [
+								{
+									"key": "res_id",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user-rate-res",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/user-res/user-rate-res/3",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"user-res",
+								"user-rate-res",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list-res-rate",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/user-res/list-res-rate/4",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"user-res",
+								"list-res-rate",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bài tập 3",
+			"item": [
+				{
+					"name": "add-order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"user_id\": 2, \r\n    \"food_id\": 12, \r\n    \"amount\": 3, \r\n    \"code\": \"ZXZXCASD\", \r\n    \"arr_sub_id\": 1.4 \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/order/add-order",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"order",
+								"add-order"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
