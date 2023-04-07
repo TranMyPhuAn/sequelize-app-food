@@ -5,7 +5,7 @@ yarn sequelize-cli db:create // tạo database
 // Chạy file upload database
 yarn sequelize-cli db:migrate
 
-yarn sequelize db:seed:all //chạy file backup dữ liệu
+yarn sequelize-cli db:seed:all //chạy file backup dữ liệu
 
 
 yarn sequelize-auto -h localhost -d db_app_food -u root -x 1234 -p 3307 --dialect mysql -o ./src/models -l es6
